@@ -1,0 +1,19 @@
+version: "3"
+env:
+  CGO_ENABLED: 0
+tasks:
+  default:
+    cmds:
+      - go build ./cmd/karune
+  clean:
+    cmds:
+      - go run ./cmd/rm karune
+  test:
+    cmds:
+      - go test ./...
+  run:
+    cmds:
+      - go run ./cmd/karune
+  fmt:
+    cmds:
+      - go fmt ./...
