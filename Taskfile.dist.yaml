@@ -8,6 +8,7 @@ tasks:
   clean:
     cmds:
       - go run ./cmd/rm karune
+      - go run ./cmd/rm karune.exe
   test:
     cmds:
       - go test ./...
